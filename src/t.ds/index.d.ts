@@ -1,1 +1,8 @@
-import './sampleApi.d.ts';
+declare namespace config {
+
+  interface IconfigEntity {
+    port: number,
+    apiRoot: string
+  }
+
+}
