@@ -1,0 +1,1 @@
+import './sampleApi.d.ts';
