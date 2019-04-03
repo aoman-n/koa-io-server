@@ -1,5 +1,5 @@
 import * as http from 'http';
-import * as socketio from "socket.io";
+import * as socketio from 'socket.io';
 
 const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
