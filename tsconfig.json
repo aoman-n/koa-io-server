@@ -1,15 +1,19 @@
 {
   "compilerOptions": {
-  "module": "commonjs",
-  "target": "es2017",
-  "noImplicitAny": true,
-  "sourceMap": false,
-  "rootDir": "./src",
-  "outDir": "./lib",
+    "module": "commonjs",
+    "target": "es2017",
+    "noImplicitAny": true,
+    "sourceMap": false,
+    "rootDir": "./src",
+    "outDir": "./lib",
+    "baseUrl": ".",
+    "paths": {
+      "*": ["types/*"]
+    }
   },
   "include": [
     "./src/**/*",
-    "./typings/**/*"
+    "./types/**/*"
   ],
   "exclude": [
     "node_modules"

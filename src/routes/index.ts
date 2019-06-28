@@ -5,8 +5,9 @@ const router = new Router();
 // router.prefix("/v1");
 
 router.get('/', async (ctx, next) => {
-  ctx.body = 'Hello World';
-  ctx.status = 200;
+  await ctx.render('index', {
+    name: 'hogemisokun',
+  });
 });
 
 export default router;
