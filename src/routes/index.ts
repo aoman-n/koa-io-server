@@ -6,7 +6,8 @@ const router = new Router();
 
 router.get('/', async (ctx, next) => {
   await ctx.render('index', {
-    name: 'hogemisokun',
+    title: 'Hello Redis',
+    cssFile: 'test.css',
   });
 });
 

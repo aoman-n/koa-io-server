@@ -1,11 +1,14 @@
 <html>
   <head>
-    <title>koa ejs</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <title><%= title %></title>
+    <meta http-equiv="content-language" content="ja">
+    <meta charset="UTF-8">
+    <% include ./scripts.html %>
     <script src="/js/index.js"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/<%= cssFile %>">
   </head>
   <body>
-    <h3>koa ejs</h3>
     <%- body %>
   </body>
 </html>
