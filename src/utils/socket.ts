@@ -10,6 +10,13 @@ const ioEvents = (io: SocketIO.Server) => {
       console.log('経過しました');
       socket.emit('finished recognition', '完了しました！');
     });
+
+    socket.on('chat message', msg => {
+      console.log(msg);
+      io.emit('chat message', msg);
+      // socket.broadcast.emit('chat message', msg);
+    });
+
   });
 };
 
